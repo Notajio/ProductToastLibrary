@@ -115,7 +115,7 @@ import AFNetworking
             placeholderImage    = UIImage(named         : cardConfiguration.placeholderImageName,
                                           in            : bundle,
                                           compatibleWith: nil)
-            imageUrl            = cardConfiguration.placeholderImageName
+            imageUrl            = cardConfiguration.imageUrl
             dropShadow          = cardConfiguration.dropShadow
             customMessageView   = cardConfiguration.customMessageView
         }
