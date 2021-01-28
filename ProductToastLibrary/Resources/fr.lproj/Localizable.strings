@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  ProductToastLibrary
+
+  Created by Benjamin Nardin on 28/01/2021.
+  
+*/
+
+// titles
+"card_success_title"    = "Succs";
+"card_error_title"      = "Oops!";
+"card_warning_title"    = "Warning";
+"status_success_title"  = "Success";
+"status_error_title"    = "Oops!";
+
+// subtitles
+"card_success_subtitle"         = "This is a success alert";
+"card_error_default_subtitle"   = "An error occurred";
+"card_warning_subtitle"         = "This is a warning alert";
+"status_success_subtitle"       = "Claim code copied!";
+"status_error_subtitle"         = "Please check your network settings";
