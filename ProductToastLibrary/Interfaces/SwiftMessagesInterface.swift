@@ -14,7 +14,7 @@ import AFNetworking
 
 @objc class SwiftMessagesInterface: NSObject {
 
-    // MARK: - Package available
+    // MARK: - Bundle available
 
     @objc class func showNotificationToast(sender            : UIViewController,
                                            customMessageView : MessageView?,
@@ -111,7 +111,10 @@ import AFNetworking
             dropShadow          = false
 
         if let cardConfiguration = configuration as? CardProductToast {
-            placeholderImage    = UIImage(named: cardConfiguration.placeholderImageName)
+            let bundle          = Bundle(for: self)
+            placeholderImage    = UIImage(named         : cardConfiguration.placeholderImageName,
+                                          in            : bundle,
+                                          compatibleWith: nil)
             imageUrl            = cardConfiguration.placeholderImageName
             dropShadow          = cardConfiguration.dropShadow
             customMessageView   = cardConfiguration.customMessageView

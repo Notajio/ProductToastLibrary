@@ -36,7 +36,7 @@ struct ToastConfiguration {
         let title                           = "Success"
         let subtitle                        = "This is a success alert"
         let toastType                       = ToastType.topCard
-        let backgroundColor                 = UIColor.yellow
+        let backgroundColor                 = UIColor.green
         let foregroundColor                 = UIColor.black
         let duration                        = 5.0
         let dropShadow                      = false
@@ -49,7 +49,7 @@ struct ToastConfiguration {
         let title                           = "Oops!"
         var subtitle                        = "An error occurred"
         let toastType                       = ToastType.topCard
-        let backgroundColor                 = UIColor.yellow
+        let backgroundColor                 = UIColor.red
         let foregroundColor                 = UIColor.black
         let duration                        = 5.0
         let dropShadow                      = false
