@@ -33,8 +33,8 @@ protocol StatusBarToast: ProductToastConfiguration {
 struct ToastConfiguration {
 
     final class SuccessCard: CardProductToast {
-        let title                           = "card_success_title".localized
-        let subtitle                        = "card_success_subtitle".localized
+        let title                           = "Success"
+        let subtitle                        = "This is a success alert"
         let toastType                       = ToastType.topCard
         let backgroundColor                 = UIColor.yellow
         let foregroundColor                 = UIColor.black
@@ -46,8 +46,8 @@ struct ToastConfiguration {
     }
 
     final class ErrorCard: CardProductToast {
-        let title                           = "card_error_title".localized
-        var subtitle                        = "card_error_default_subtitle".localized
+        let title                           = "Oops!"
+        var subtitle                        = "An error occurred"
         let toastType                       = ToastType.topCard
         let backgroundColor                 = UIColor.yellow
         let foregroundColor                 = UIColor.black
@@ -59,8 +59,8 @@ struct ToastConfiguration {
     }
 
     final class WarningCard: CardProductToast {
-        let title                           = "card_warning_title".localized
-        let subtitle                        = "card_warning_subtitle".localized
+        let title                           = "Warning"
+        let subtitle                        = "This is a warning alert"
         let toastType                       = ToastType.topCard
         let backgroundColor                 = UIColor.orange
         let foregroundColor                 = UIColor.white
@@ -72,8 +72,8 @@ struct ToastConfiguration {
     }
 
     final class SuccessStatusBar: StatusBarToast {
-        let title               = "status_success_title".localized
-        let subtitle            = "status_success_subtitle".localized
+        let title               = "Oops!"
+        let subtitle            = "Claim code copied!"
         let toastType           = ToastType.topStatusBar
         let backgroundColor     = UIColor.green
         let foregroundColor     = UIColor.white
@@ -81,8 +81,8 @@ struct ToastConfiguration {
     }
 
     final class ErrorStatusBar: StatusBarToast {
-        let title               = "status_error_title".localized
-        let subtitle            = "status_error_subtitle".localized
+        let title               = "Success"
+        let subtitle            = "Please check your network settings"
         let toastType           = ToastType.topStatusBar
         let backgroundColor     = UIColor.red
         let foregroundColor     = UIColor.white

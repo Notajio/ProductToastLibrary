@@ -17,9 +17,6 @@
 		839F898425C2BCD5003408DA /* SwiftMessagesInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F898125C2BCD5003408DA /* SwiftMessagesInterface.swift */; };
 		839F898D25C2BF54003408DA /* CodeStyle.md in Resources */ = {isa = PBXBuildFile; fileRef = 839F898B25C2BF54003408DA /* CodeStyle.md */; };
 		839F898E25C2BF54003408DA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 839F898C25C2BF54003408DA /* LICENSE */; };
-		839F899325C2C03F003408DA /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F899225C2C03F003408DA /* String+Localized.swift */; };
-		839F89AE25C2C240003408DA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 839F89B125C2C240003408DA /* Localizable.strings */; };
-		839F89AF25C2C240003408DA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 839F89B125C2C240003408DA /* Localizable.strings */; };
 		839F89BB25C2CC84003408DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839F89BA25C2CC84003408DA /* Assets.xcassets */; };
 		839F89BC25C2CC84003408DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839F89BA25C2CC84003408DA /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -48,8 +45,6 @@
 		839F898125C2BCD5003408DA /* SwiftMessagesInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMessagesInterface.swift; sourceTree = "<group>"; };
 		839F898B25C2BF54003408DA /* CodeStyle.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CodeStyle.md; sourceTree = "<group>"; };
 		839F898C25C2BF54003408DA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		839F899225C2C03F003408DA /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
-		839F89B025C2C240003408DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		839F89BA25C2CC84003408DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C8B64F7C81BC7F53DCEA44E /* Pods_ProductToastLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProductToastLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADC8843C565BF2BDB7B341A /* Pods-ProductToastLibrary-ProductToastLibraryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProductToastLibrary-ProductToastLibraryTests.debug.xcconfig"; path = "Target Support Files/Pods-ProductToastLibrary-ProductToastLibraryTests/Pods-ProductToastLibrary-ProductToastLibraryTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -113,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				839F89B925C2CC69003408DA /* Resources */,
-				839F899125C2C030003408DA /* Extensions */,
 				839F897E25C2BCD5003408DA /* Configuration */,
 				839F898025C2BCD5003408DA /* Interfaces */,
 				839F895C25C2BBE8003408DA /* ProductToastLibrary.h */,
@@ -148,18 +142,9 @@
 			path = Interfaces;
 			sourceTree = "<group>";
 		};
-		839F899125C2C030003408DA /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				839F899225C2C03F003408DA /* String+Localized.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		839F89B925C2CC69003408DA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				839F89B125C2C240003408DA /* Localizable.strings */,
 				839F89BA25C2CC84003408DA /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -271,7 +256,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				839F898E25C2BF54003408DA /* LICENSE in Resources */,
-				839F89AE25C2C240003408DA /* Localizable.strings in Resources */,
 				839F89BB25C2CC84003408DA /* Assets.xcassets in Resources */,
 				839F898D25C2BF54003408DA /* CodeStyle.md in Resources */,
 			);
@@ -282,7 +266,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				839F89BC25C2CC84003408DA /* Assets.xcassets in Resources */,
-				839F89AF25C2C240003408DA /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +342,6 @@
 			files = (
 				839F898425C2BCD5003408DA /* SwiftMessagesInterface.swift in Sources */,
 				839F898325C2BCD5003408DA /* ToastConfiguration.swift in Sources */,
-				839F899325C2C03F003408DA /* String+Localized.swift in Sources */,
 				839F898225C2BCD5003408DA /* ProductToastController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,17 +363,6 @@
 			targetProxy = 839F896425C2BBE8003408DA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		839F89B125C2C240003408DA /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				839F89B025C2C240003408DA /* en */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		839F896B25C2BBE8003408DA /* Debug */ = {
@@ -446,7 +417,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -504,7 +475,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
